@@ -1,9 +1,0 @@
-{
-  "name": "VPS BY akuh.net",
-  "description": "HEROKU VPS",
-  "keywords": ["VPS", "HEROKU", "Free", "Firefox", "novnc", "VNC", "anycloud", "cloud-downloader", "rclone-backdoor", "index-backdoor", "rclone", "index"],
-
-  "website": "",
-  "repository": "",
-  "stack": "container"
- }
